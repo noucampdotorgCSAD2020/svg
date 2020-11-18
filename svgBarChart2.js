@@ -11,6 +11,7 @@ function drawBarChart() {
   
   $.each(data, function(i,value ) {
     var rect=document.createElementNS("http://www.w3.org/2000/svg","rect");
+    rect.setAttribute('x',0);
     rect.setAttribute('y',i*60);
     rect.setAttribute('width',data[i]);
     rect.setAttribute('height',50);
